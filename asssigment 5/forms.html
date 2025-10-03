@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Form Example</title>
+</head>
+<body>
+
+<form action="#" method="post">
+
+    <fieldset>
+        <legend>Login</legend>
+        <div class="form-group">
+            <label for="username">Username*</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password*</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Gender*</legend>
+        <div class="form-group">
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male" style="display: inline;">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female" style="display: inline;">Female</label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Programming Skill</legend>
+        <div class="form-group">
+            <input type="checkbox" id="java" name="skill" value="java">
+            <label for="java" style="display: inline;">Java</label>
+            <input type="checkbox" id="cplusplus" name="skill" value="c++" checked>
+            <label for="cplusplus" style="display: inline;">C++</label>
+            <input type="checkbox" id="csharp" name="skill" value="c#">
+            <label for="csharp" style="display: inline;">C#</label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Fruit</legend>
+        <div class="form-group">
+            <label for="fruit" style="display: inline;">Choose a fruit:</label>
+            <select id="fruit" name="fruit">
+                <option value="apple">Apple</option>
+                <option value="banana" selected>Banana</option>
+                <option value="orange">Orange</option>
+                <option value="grape">Grape</option>
+            </select>
+        </div>
+    </fieldset>
+
+    <div class="form-group">
+        <textarea name="comment" rows="5" placeholder="Enter your comment here"></textarea>
+    </div>
+
+    <div class="button-group">
+        <input type="submit" value="SEND">
+        <input type="reset" value="RESET">
+    </div>
+
+</form>
+
+<form>
+    <fieldset>
+        <legend>Login details</legend>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+    </fieldset>
+
+    <fieldset class="feedback-section">
+        <legend>Your feedback</legend>
+        
+        <p>Please check all the emotions that apply to you:</p>
+        <div class="checkbox-group">
+            <div>
+                <input type="checkbox" id="angry" name="emotion" value="angry">
+                <label for="angry" style="width: auto;">Angry</label>
+            </div>
+            <div>
+                <input type="checkbox" id="sad" name="emotion" value="sad">
+                <label for="sad" style="width: auto;">Sad</label>
+            </div>
+            <div>
+                <input type="checkbox" id="happy" name="emotion" value="happy">
+                <label for="happy" style="width: auto;">Happy</label>
+            </div>
+            <div>
+                <input type="checkbox" id="ambivalent" name="emotion" value="ambivalent">
+                <label for="ambivalent" style="width: auto;">Ambivalent</label>
+            </div>
+        </div>
+
+        <p>How satisfied were you with our service?</p>
+        <div class="radio-group">
+            <div>
+                <input type="radio" id="very-satisfied" name="satisfaction" value="very-satisfied">
+                <label for="very-satisfied" style="width: auto;">Very satisfied</label>
+            </div>
+            </div>
+
+    </fieldset>
+
+</form>
+
+
+</body>
+</html>

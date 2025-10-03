@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nested Form Sections</title>
+</head>
+<body>
+
+<form action="#" method="post">
+
+    <fieldset>
+        <legend>The First Section</legend>
+        
+        <fieldset class="subsection">
+            <legend>The First Subsection</legend>
+            <div class="field-group">
+                <input type="text" id="field1-1" name="field1-1" value="field1">
+            </div>
+        </fieldset>
+
+        <div class="field-group">
+            <input type="text" id="field1-2" name="field1-2" value="field1">
+        </div>
+        
+    </fieldset>
+
+    <fieldset>
+        <legend>Section II</legend>
+        
+        <fieldset class="subsection">
+            <legend>Section II-A</legend>
+            <div class="field-group">
+                <input type="text" id="field2-a" name="field2-a" value="field1">
+            </div>
+        </fieldset>
+
+        <fieldset class="subsection">
+            <legend>Section II-B</legend>
+            <div class="field-group">
+                <input type="text" id="field2-b" name="field2-b" value="field1">
+            </div>
+        </fieldset>
+        
+    </fieldset>
+
+    <input type="submit" value="Go! Go! Go!">
+
+</form>
+
+</body>
+</html>

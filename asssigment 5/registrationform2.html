@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Registration Form</title>
+
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Registration Form</h2>
+  <p >
+    Of course, all submitted information is kept in the strictest confidence.
+    You always retain control of your information with D.W. Simpson & Co.</p>
+    <p> <b>Our services are always at no cost to you.</b></p>
+  </p>
+
+  <form>
+    <div class="form-row">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+    </div>
+
+    <div class="form-row">
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" />
+    </div>
+
+    <div class="form-row">
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" class="short" />
+      <label for="state" style="width: 120px;">State/Province:</label>
+      <input type="text" id="state" name="state" class="short" />
+    </div>
+
+    <div class="form-row">
+      <label for="zip">Zip Code:</label>
+      <input type="text" id="zip" name="zip" class="short" />
+    </div>
+
+    <div class="form-row">
+      <label for="country">Country:</label>
+      <input type="text" id="country" name="country" />
+    </div>
+
+    <div class="form-row">
+      <label>Phone:</label>
+      <span class="small-label">(H)</span>
+      <input type="text" id="phone_home" name="phone_home" class="short" />
+      <label for="fax" style="width: 70px; font-weight: normal;">Fax:</label>
+      <input type="text" id="fax" name="fax" class="short" />
+    </div>
+
+    <div class="form-row">
+      <label>Phone:</label>
+      <span class="small-label">(W)</span>
+      <input type="text" id="phone_work" name="phone_work" class="short" />
+      <span class="small-label">(if able to speak freely)</span>
+    </div>
+
+    <div class="form-row">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" style="width:300px;" />
+    </div>
+
+    <div class="form-row">
+      <label for="company">Company Name:</label>
+      <input type="text" id="company" name="company" style="width: 200px;" />
+      <span class="small-label">(optional)</span>
+    </div>
+
+    <div class="form-row">
+      <label for="region">Desired Region</label>
+      <select id="region" name="region" style="width: 120px;">
+        <option>Other</option>
+        <!-- Add more regions as needed -->
+      </select>
+      <label for="region_other" style="width: 50px; font-weight: normal;">Other:</label>
+      <input type="text" id="region_other" name="region_other" style="width: 200px;" />
+    </div>
+
+    <div class="form-row">
+      <strong>Professional designations earned:</strong><br />
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="designation" value="College Student" /> College Student</label>
+        <label><input type="checkbox" name="designation" value="Actuarial Student" /> Actuarial Student</label>
+        <label><input type="checkbox" name="designation" value="ACAS" /> ACAS</label>
+        <label><input type="checkbox" name="designation" value="FCAS" /> FCAS</label>
+        <label><input type="checkbox" name="designation" value="ASA" /> ASA</label><br />
+
+        <label><input type="checkbox" name="designation" value="FSA" /> FSA</label>
+        <label><input type="checkbox" name="designation" value="EA" /> EA</label>
+        <label><input type="checkbox" name="designation" value="CFA" /> CFA</label>
+        <label><input type="checkbox" name="designation" value="MBA" /> MBA</label>
+        <label><input type="checkbox" name="designation" value="MAAA" /> MAAA</label><br />
+
+        <label><input type="checkbox" name="designation" value="FIA" /> FIA</label>
+        <label><input type="checkbox" name="designation" value="FCIA" /> FCIA</label>
+        <label><input type="checkbox" name="designation" value="FIAA" /> FIAA</label>
+        <label><input type="checkbox" name="designation" value="Financial Engineer" /> Financial Engineer</label>
+        <label><input type="checkbox" name="designation" value="M.S." /> M.S.</label><br />
+
+        <label><input type="checkbox" name="designation" value="Ph.D." /> Ph.D.</label>
+        <label><input type="checkbox" name="designation" value="Data Mining" /> Data Mining</label>
+        <label><input type="checkbox" name="designation" value="Quant" /> Quant</label>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <label for="other_designations">Other<br />Designations:</label>
+      <input type="text" id="other_designations" name="other_designations" style="width: 300px;" />
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
